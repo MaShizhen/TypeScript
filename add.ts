@@ -37,6 +37,7 @@ class Add {
 // var sum = new Add(1, 2);
 //使用对象和方法
 
+
 const sum = {
 	add: function (): number {
 		console.log(this.num1);
