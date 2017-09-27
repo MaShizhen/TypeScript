@@ -1,22 +1,22 @@
 //函数声明式定义
-function add(x: number, y: number): number {
+function add1(x: number, y: number): number {
 	return x + y;
 }
 //函数表达式定义
-let add = function (x: number, y: number): number {
+let add2 = function (x: number, y: number): number {
 	return x + y;
 };
 //自执行函数/匿名函数
-let add = (function (x: number, y: number): number {
+let add3 = (function (x: number, y: number): number {
 	return x + y;
 }(2, 3));
-let add = (function (x: number, y: number): number {
+let add4 = (function (x: number, y: number): number {
 	return x + y;
 })(2, 3);
 //普通箭头函数
-let add: (x: number, y: number) => number =
+let add5: (x: number, y: number) => number =
 	function (x: number, y: number): number { return x + y; };
-let add: (baseValue: number, increment: number) => number =
+let add6: (baseValue: number, increment: number) => number =
 	function (x: number, y: number): number { return x + y; };
 //使用实参对象
 function add(): number {
@@ -34,14 +34,15 @@ class Add {
 		return this.num1 + this.num2;
 	}
 }
-var sum = new Add(1, 2);
+// var sum = new Add(1, 2);
 //使用对象和方法
+
 const sum = {
 	add: function (): number {
 		console.log(this.num1);
 		return this.num1 + this.num2;
 	}
 }
-sum.num1 = 3;
-sum.num2 = 5;
-sum.add()
+// sum.num1 = 3;
+// sum.num2 = 5;
+// sum.add()
